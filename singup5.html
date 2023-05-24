@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form action="action_page.php" method="post">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <span class="error"></span>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+      <span class="error"></span>
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirm_password" id="confirm_password">
+      <span class="error"></span>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>
